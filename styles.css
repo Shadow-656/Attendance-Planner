@@ -7,7 +7,7 @@
 }
 
 .class {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 17px;
 }
 .percentage {
@@ -23,6 +23,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 10px;
+    padding-top: 20px;
 }
 
 .container {
@@ -45,7 +46,7 @@ h1 {
 input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin: 15px 0;
+    margin: 20px 0 15px 0;
     background-color: #f1f1f1;
     border: 2px solid #d2d2d2;
     border-radius: 8px;
@@ -72,7 +73,7 @@ button {
 }
 
 button:hover {
-    background-color: #147edb;
+    background-color: #1277d0;
 }
 
 #results {
@@ -113,8 +114,22 @@ footer a {
     input[type="number"], button {
       font-size: 14px;
     }
-  
+
     .container {
-      padding: 20px;
+      padding: 15px;
+    }
+
+    .class {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .percentage {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .result {
+        font-size: 14px;
     }
   }

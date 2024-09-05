@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Planner</title>
+    <meta name="description" content="Use our Attendance Planner to calculate how many classes you can miss and still maintain your desired attendance percentage. Created by Shadow-656.">
+    <meta property="og:title" content="Attendance Planner">
+    <meta property="og:description" content="Calculate how many classes you can miss for different attendance percentages.">
+    <meta property="og:image" content="planner.png">  
+    <meta property="og:url" content="https://shadow-656.github.io/Attendance-Planner/">
+    <title>Attendance Planner - Calculate Missed Classes | Shadow</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="planner.png">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Attendance Planner",
+          "description": "Use our Attendance Planner to calculate how many classes you can miss while maintaining your desired attendance percentage. Created by Shadow-656.",
+          "url": "https://shadow-656.github.io/Attendance-Planner/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Shadow-656"
+          }
+        }
+        </script>
 </head>
 <body>
     <div class="container">
-        <img src="planner.png">
-        <h1>Attendance Planner</h1>
-        <p>Enter the total number of classes to calculate how many classes you can miss for different attendance percentages.</p>
-    
+        <img src="planner.png" alt="Attendance Planner Tool">
+        <h1>Attendance Planner - Calculate Missed Classes</h1>
+        <p>Welcome to the Attendance Planner by Shadow. This tool helps students calculate the number of classes they can miss while maintaining their desired attendance percentage. Simply enter the total number of classes and get instant results!</p>
         <input type="number" id="totalClasses" placeholder="Enter total number of classes">
         <button onclick="calculateMissedClasses()">Calculate</button>
 
         <div id="results"></div>
     </div>
     <footer>
-        <p>Copyright &copy; 2024 <a href="https://github.com/Shadow-656">Shadow-656</a></p>
+        <p>Copyright &copy; 2024 <a href="https://github.com/Shadow-656" target="_blank">Shadow-656</a></p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script>   
 </body>
 </html>

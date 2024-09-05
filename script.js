@@ -17,7 +17,7 @@ function calculateMissedClasses() {
 
     let resultHTML = '<h3>Results:</h3>';
     for (let percentage in attendanceThresholds) {
-        resultHTML += `<p style="margin-bottom: 10px;">You can miss <a class="class">${attendanceThresholds[percentage]}</a> classes for attendance above <a class="percentage">${percentage}%</a></p>`;
+        resultHTML += `<p class="result" style="margin-bottom: 10px;">You can miss <a class="class">${attendanceThresholds[percentage]}</a> classes for attendance above <a class="percentage">${percentage}%</a></p>`;
     }
 
     resultsDiv.innerHTML = resultHTML;
