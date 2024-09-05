@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="planner.png">
+</head>
+<body>
+    <div class="container">
+        <img src="planner.png">
+        <h1>Attendance Planner</h1>
+        <p>Enter the total number of classes to calculate how many classes you can miss for different attendance percentages.</p>
+    
+        <input type="number" id="totalClasses" placeholder="Enter total number of classes">
+        <button onclick="calculateMissedClasses()">Calculate</button>
+
+        <div id="results"></div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024 <a href="https://github.com/Shadow-656">Shadow-656</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
