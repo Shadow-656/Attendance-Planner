@@ -1,0 +1,21 @@
+{
+  "name": "Attendance Planner",
+  "short_name": "Attendance",
+  "description": "A tool to calculate how many classes you can miss based on attendance percentage.",
+  "start_url": "/Attendance-Planner/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "/Attendance-Planner/planner.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Attendance-Planner/planner.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

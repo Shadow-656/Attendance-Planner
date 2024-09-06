@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="pVh2aq7LTtL4bwzC3wqn77fiY_L1Kcgxvm1X04-mqvI" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Use our Attendance Planner to calculate how many classes you can miss and still maintain your desired attendance percentage. Created by Shadow-656.">
     <meta property="og:title" content="Attendance Planner">
@@ -11,6 +12,19 @@
     <title>Attendance Planner - Calculate Missed Classes | Shadow</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="planner.png">
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/Attendance-Planner/service-worker.js')
+            .then(function(registration) {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+      }
+    </script>
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
