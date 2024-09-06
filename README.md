@@ -1,4 +1,4 @@
-![Logo](planner-512.png)
+![Logo](planner-192.png)
 # Attendance Planner
 
 ## Overview
@@ -39,8 +39,7 @@ The **Attendance Planner** is a simple, user-friendly web application designed f
 
 ## Screenshots
 
-![Screenshot 2](assets/1.png)
-![Screenshot 2](assets/2.png)
+![Screenshot](assets/1.png)
 
 ## Technologies Used
 
