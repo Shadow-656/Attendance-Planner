@@ -43,6 +43,11 @@ h1 {
     margin-bottom: 20px;
 }
 
+img { 
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
 input[type="number"] {
     width: 100%;
     padding: 10px;
@@ -113,6 +118,10 @@ footer a {
     
     input[type="number"], button {
       font-size: 14px;
+    }
+
+    img {
+        max-width: 80px;
     }
 
     .container {
