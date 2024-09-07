@@ -1,4 +1,4 @@
-![Logo](planner-192.png)
+![Logo](assets/planner-192.png)
 # Attendance Planner
 
 ## Overview
