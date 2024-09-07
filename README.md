@@ -37,7 +37,7 @@ The **Attendance Planner** is a simple, user-friendly web application designed f
 - On Safari (iOS):
   - Tap the “Share” button and then “Add to Home Screen” to install the app on your iPhone or iPad.
 
-## Screenshots
+## Screenshot
 
 ![Screenshot](assets/1.png)
 
