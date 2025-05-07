@@ -39,7 +39,8 @@ The **Attendance Planner** is a simple, user-friendly web application designed f
 
 ## Screenshot
 
-![Screenshot](assets/1.png)
+![LightSS](assets/LightMode.png)
+![DarkSS](assets/DarkMode.png)
 
 ## Technologies Used
 
