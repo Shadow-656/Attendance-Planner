@@ -28,3 +28,69 @@ document.getElementById('totalClasses').addEventListener('keyup', function(event
         calculateMissedClasses();
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const themeToggleButton = document.getElementById("theme-toggle-btn");
+    const body = document.body;
+
+    if (!themeToggleButton) {
+        console.error("Theme toggle button not found!");
+        return;
+    }
+
+    const sunIcon = themeToggleButton.querySelector(".icon-sun");
+    const moonIcon = themeToggleButton.querySelector(".icon-moon");
+    
+    if (!sunIcon || !moonIcon) {
+        console.error("Theme icons not found within the toggle button!");
+    }
+
+    const applyTheme = (theme) => {
+        if (theme === "dark") {
+            body.classList.add("dark-mode");
+            body.classList.remove("light-mode");
+        } else {
+            body.classList.remove("dark-mode");
+            body.classList.add("light-mode");
+        }
+
+        if (sunIcon) {
+            sunIcon.style.display = theme === "light" ? "inline" : "none";
+        }
+        if (moonIcon) {
+            moonIcon.style.display = theme === "dark" ? "inline" : "none";
+        }
+
+        themeToggleButton.setAttribute("aria-label", `Switch to ${theme === "dark" ? "light" : "dark"} mode`);
+        themeToggleButton.setAttribute("aria-pressed", theme === "dark");
+    };
+
+    const getCurrentThemePreference = () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+            return savedTheme;
+        }
+        if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            return "dark";
+        }
+        return "light";
+    };
+
+    let currentTheme = getCurrentThemePreference();
+    applyTheme(currentTheme);
+
+    themeToggleButton.addEventListener("click", () => {
+        currentTheme = body.classList.contains("dark-mode") ? "light" : "dark";
+        localStorage.setItem("theme", currentTheme);
+        applyTheme(currentTheme);
+    });
+
+    if (window.matchMedia) {
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", event => {
+            if (!localStorage.getItem("theme")) {
+                currentTheme = event.matches ? "dark" : "light";
+                applyTheme(currentTheme);
+            }
+        });
+    }
+});
